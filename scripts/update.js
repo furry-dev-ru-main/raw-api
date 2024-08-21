@@ -17,7 +17,7 @@ fs.readdir(directoryPath, function (err, files) {
             const dataArray = [JSON.parse(data)];
 
             for (const item of dataArray) {
-                item.domain = path.parse(file).name + ".is-a.dev";
+                item.domain = path.parse(file).name + ".furry-dev.ru";
                 item.subdomain = path.parse(file).name;
 
                 delete item.owner.email;
